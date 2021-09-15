@@ -1,0 +1,151 @@
+*{  
+    box-sizing: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+/*menu*/
+header,
+section{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: 'Roboto', sans-serif;
+}
+
+header li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95em;
+    
+
+}
+
+header .nav-item:last-child{
+    padding-right: 10.5em;
+}
+
+header .nav-item{
+    padding: 0.9em;
+}
+
+header .navbar-brand{
+    padding-left: 8rem;
+}
+
+header .nav-link:hover{
+    color: #007bff;
+}
+
+header .navbar-brand:hover{
+    color: #007bff;
+}
+
+.navbar{
+    background-color: #364151;
+    opacity: 0.9;
+    
+}
+nav img:hover{
+    width: 55px;
+    transition: all 0.5s ease;
+}
+/*end menu*/
+
+/*section-1*/
+.section-4 .container-fluid h1{
+    font-size: 6vmin;
+    padding-top: 20vmin;
+}
+
+.section-4 .container-fluid .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .section-4 .container-fluid .row .column {
+    flex: 25%;
+    max-width: 33.3%;
+    padding: 0 4px;
+  }
+  
+ .section-4 .container-fluid .row .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: grayscale(1) brightness(0.5);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .section-4 .container-fluid .row .column img:hover {
+    filter: grayscale(0);
+  }
+  @media screen and (max-width: 800px) {
+   .section-4 .container-fluid .row .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .section-4 .container-fluid .row .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+   .section-4 .container-fluid .row .column img {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+  
+/*end section-1*/
+
+/*footer*/
+footer{
+    background:rgba(54, 65, 81);
+    overflow-x: hidden;
+    padding: 14vmin 18vmin;
+
+}
+footer p > span{
+    color: #007bff;
+    
+}
+.column i{
+    color: #007bff;
+}
+
+.column a+a{
+    padding: 0 0.4em;
+}
+/*end footer*/
+
+/*mobile-design*/
+@media only screen and (max-width: 768px) {
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .section-2 .row .col-md-6 .panel{
+        position: initial;
+        width: initial;
+        height: initial;
+    }
+    .section-4 .team{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .section-4 .carousel-inner{
+        width: 24rem;
+    }
+  }
+
+  @media only screen and (max-width: 425px) {
+    footer .row .col-md-2{
+        margin-top: 8vmin;
+
+    }
+  }
+  /*end mobile-design*/
